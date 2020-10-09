@@ -89,7 +89,7 @@
       <!-- Grid column -->
     </div>
     <!-- Grid row -->
-    <button style="margin-top: 30px;" type="submit" class="btn btn-warning btn-md">Save Details</button>
+    <button onclick="return confirm('Are you sure you want to update this item?');" style="margin-top: 30px;" type="submit" class="btn btn-warning btn-md">Save Details</button>
   </form>
   <!-- Extended material form grid -->
   <script type="text/javascript">
