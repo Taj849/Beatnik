@@ -185,19 +185,9 @@
           <div class="col-lg-12">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
-              @for ($j = 0; $j < $i; $j++)
-                  @php
-                      $count=count($portfolio_name[$j]);
-                  @endphp
-                  @for ($k = 0; $k < $count; $k++)
-                      @if ($portfolio_name[$j][$k]->categoryTitles_id!=$data)
-                      <li data-filter=".filter-{{$portfolio_name[$j][$k]->categoryName}}">{{$portfolio_name[$j][$k]->categoryName}}</li>
-                          @php
-                               $data=$portfolio_name[$j][$k]->categoryTitles_id;
-                          @endphp
-                      @endif
-                  @endfor
-              @endfor
+                  @foreach ($portfolio as $item)
+                  <li data-filter=".filter-{{$item->categoryName}}">{{$item->categoryName}}</li>
+                  @endforeach
             </ul>
           </div>
         </div>
