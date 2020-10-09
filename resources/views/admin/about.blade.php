@@ -57,7 +57,7 @@
                   
                   <td><img style="width: 100px;height:100px;"  src="images/about/{{$item->aboutImage}}" alt=""></td>
                   <td><a href="/aboutEdit/{{$item->id}}"><button btn btn-warning>Edit</button></a> 
-                    <a href="/aboutDelete/{{$item->id}}"><button btn btn-danger>Delete</button></a> 
+                    <a href="/aboutDelete/{{$item->id}}"onclick="return confirm('Are you sure you want to Delete this item?');"><button btn btn-danger>Delete</button></a> 
                   </td>
                 </tr>
                 
