@@ -52,7 +52,7 @@
                   
     
                   <td><a href="/contactEdit/{{$item->id}}"><button btn btn-warning>Edit</button></a> 
-                    <a href="/contactDelete/{{$item->id}}"><button btn btn-danger>Delete</button></a> 
+                    <a href="/contactDelete/{{$item->id}}" onclick="return confirm('Are you sure you want to Delete this item?');"><button btn btn-danger>Delete</button></a> 
                   </td>
                 </tr>
                 
