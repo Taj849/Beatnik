@@ -32,7 +32,7 @@
 
                   <td>{{$item->serviceDetail}}</td>
                   <td><a href="/serviceEdit/{{$item->id}}"><button btn btn-warning>Edit</button></a> 
-                    <a href="/serviceDelete/{{$item->id}}"><button btn btn-danger>Delete</button></a> 
+                    <a href="/serviceDelete/{{$item->id}}" onclick="return confirm('Are you sure you want to Delete this item?');"><button btn btn-danger>Delete</button></a> 
                   </td>
                 </tr>
                 
