@@ -53,7 +53,7 @@
                       @endfor
                 </td>
                   <td><a href="/portfolioEdit/{{$item->id}}"><button btn btn-warning>Edit</button></a> 
-                    <a href="/portfolioDelete/{{$item->id}}"><button btn btn-danger>Delete</button></a> 
+                    <a href="/portfolioDelete/{{$item->id}}" onclick="return confirm('Are you sure you want to Delete this item?');"><button btn btn-danger>Delete</button></a> 
                   </td>
                 </tr>
                 
