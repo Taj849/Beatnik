@@ -37,7 +37,7 @@ class ContactController extends Controller
             $service=DB::table('services')->get();
             $question=DB::table('questions')->get();
             $contact=DB::table('contacts')->get();
-            return view('userhome',compact('about','list','portfolio_name','i','service','question','contact'));
+            return view('userhome',compact('about','list','portfolio','portfolio_name','i','service','question','contact'));
        
 
     }
